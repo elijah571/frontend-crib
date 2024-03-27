@@ -1,0 +1,157 @@
+body {
+    background-color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Remove default body margin for better responsiveness */
+  }
+  
+  header {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: calc(2rem + 2vw);  /* Adjust font size based on viewport width */
+  }
+  
+  .nav {
+    background-color: #eee;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between; /* Center navigation items horizontally */
+  }
+  
+  .Professional {
+    font-size: large;
+  }
+  
+  .info {
+    background-color: rgb(82, 79, 79);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 15px;
+    color: #ffff;
+  }
+  
+  .phone-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  svg {
+    width: 15px;
+  }
+  
+  main {
+    margin-top: 30px;
+    padding: 20px; /* Add padding for better content containment */
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid layout with minimum column width and flexible fit */
+    gap: 40px; /* Adjust gap based on preference */
+  }
+  
+  .profile {
+    background-color: #ddd;
+    padding: 20px 25px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+  }
+  
+  .profile-name {
+    border-bottom: 1px solid #aca8a8;
+  }
+  
+  .profile-name h3 {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .middle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .middle small {
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  
+  .experties {
+    margin-top: 20px;
+  }
+  
+  .experties h2 {
+    border-bottom: 1px solid #aca8a8;
+  }
+  
+  ul li {
+    margin-top: 10px;
+  }
+  
+  .right {
+    /* Remove fixed width and height, rely on flexbox for responsive sizing */
+    font-size: 16px;
+    color: grey;
+  }
+  
+  .work-experiece{
+    border-bottom: 1px solid #aca8a8;
+  }
+  
+  .job {
+    /* No width set, will adjust based on available space */
+  }
+  .job h3{
+    font-size: 18px;
+  }
+  
+  .job small {
+    font-size: 14px;
+  }
+  
+  /* Media Queries for Additional Responsiveness */
+  
+  @media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    h1 {
+      font-size: calc(1.5rem + 1vw);
+    }
+    .container {
+      grid-template-columns: 1fr; /* Stack columns on top of each other for smaller screens */
+    }
+    .right {
+      font-size: 14px;
+    }
+  }
